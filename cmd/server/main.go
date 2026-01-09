@@ -21,6 +21,7 @@ func init() {
 
 func main() {
 	if err := os.MkdirAll(storageDir, 0775); err != nil {
+		fmt.Println(storageDir)
 		log.Fatal(err)
 	}
 

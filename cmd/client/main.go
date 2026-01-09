@@ -15,7 +15,7 @@ import (
 var serverUrl string
 
 func init() {
-	serverUrl = os.Getenv("SERVER_URL") + ":" + os.Getenv("PORT")
+	serverUrl = os.Getenv("SERVERURL") + ":" + os.Getenv("PORT")
 }
 
 func main() {
