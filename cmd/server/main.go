@@ -7,12 +7,17 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+
+	_ "github.com/joho/godotenv/autoload"
 )
 
-const (
-	serverPort = "8080"
-	storageDir = "./storage"
-)
+var serverPort string
+var storageDir string
+
+func init() {
+	serverPort = os.Getenv("PORT")
+	storageDir = os.Getenv("STORAGEDIR")
+}
 
 func main() {
 	if err := os.MkdirAll(storageDir, 0775); err != nil {

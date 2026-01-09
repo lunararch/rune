@@ -8,9 +8,15 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+
+	_ "github.com/joho/godotenv/autoload"
 )
 
-const serverUrl = "http://192.168.0.217:8080"
+var serverUrl string
+
+func init() {
+	serverUrl = os.Getenv("SERVER_URL") + ":" + os.Getenv("PORT")
+}
 
 func main() {
 	if len(os.Args) > 3 {
