@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af2250f9-30a9-498e-b90a-35ebb706c223" name="Changes" comment="fix: update environment variable name and add .gitignore">
+    <list default="true" id="af2250f9-30a9-498e-b90a-35ebb706c223" name="Changes" comment="refactor: restructure file upload and download functionality into client package; add file watcher support">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/client/sync.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/client/sync.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/client/watcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/client/watcher.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,8 @@
     <MESSAGE value="initialize project structure with basic file upload and download functionality" />
     <MESSAGE value="add dotenv support and update project configuration" />
     <MESSAGE value="fix: update environment variable name and add .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: update environment variable name and add .gitignore" />
+    <MESSAGE value="refactor: restructure file upload and download functionality into client package; add file watcher support" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: restructure file upload and download functionality into client package; add file watcher support" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
